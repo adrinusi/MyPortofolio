@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhamad Adri Nusi Qowiyu | Junior QA &amp; Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio Muhamad Adri Nusi Qowiyu: Junior Quality Assurance (Manual &amp; Automation Testing), web developer, dan desainer grafis."
+    />
+
+    <!-- Tandai JS aktif agar animasi hanya jalan jika JS tersedia -->
+    <script>
+      document.documentElement.classList.add("js");
+
+      /* Selalu mulai dari paling atas (bagian foto):
+         hapus hash di URL (mis. #about) dan matikan restore posisi scroll */
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      if (location.hash) {
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#home">NUSI<span>Qowiyu</span></a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+          <i class="bi bi-list"></i>
+        </button>
+        <nav id="menu" class="menu">
+          <a href="#about">Tentang</a>
+          <a href="#qa-skills">Skill</a>
+          <a href="#projects">Proyek Lain</a>
+          <a href="#contact" class="btn-small">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Cahaya latar animasi untuk hero -->
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+      </div>
+
+      <!-- HERO -->
+      <section id="home" class="hero wrap">
+        <div class="hero-text">
+          <p class="role reveal" style="--d: 0.15s" aria-label="Junior QA Engineer, Manual dan Automation Testing, Web Developer">
+            <span class="role-prefix">&gt;</span>
+            <span id="typed"></span><span class="cursor" aria-hidden="true"></span>
+          </p>
+          <h1 class="reveal" style="--d: 0.3s">Hai, saya <span class="grad">Nusi Qowiyu</span></h1>
+          <p class="lead reveal" style="--d: 0.45s">
+            Saya adalah seorang programer WEB/Mobile dan QA Tester yang mampu melakukan <strong>Manual Testing</strong> dan
+            <strong>Automation Testing.</strong> Saya Juga berpengalaman dalam pengembangan <strong>web dan mobile</strong>.
+          </p>
+          <div class="cta reveal" style="--d: 0.6s">
+            <a href="asset/style/image/CV-Nusi.pdf" class="btn btn-primary" target="_blank" rel="noopener"><i class="bi bi-download"></i>CV Saya</a>
+            <a href="#contact" class="btn btn-ghost"><i class="bi bi-envelope"></i> Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <span class="orbit" aria-hidden="true"></span>
+            <img src="asset/style/image/foto-aku.jpg" alt="Foto Muhamad Adri Nusi Qowiyu" />
+          </div>
+        </div>
+
+        <div class="scroll-hint reveal" style="--d: 1.4s">
+          <a href="#about" aria-label="Gulir ke bagian Tentang Saya">
+            <span class="mouse"><i></i></span>
+            <small>Scroll</small>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section wrap">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-grid">
+          <p>
+            Nama saya Muhamad Adri Nusi Qowiyu. Saya memiliki semangat tinggi untuk belajar dan
+            berkembang di bidang teknologi informasi dan Software Quality Assurance. Saya tertarik pada
+            pengujian perangkat lunak, pengembangan aplikasi, serta memastikan sistem berjalan sesuai
+            kebutuhan pengguna.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><i class="bi bi-mortarboard"></i> S1 Ilmu Komputer, Univ. Yatsi Madani (Semester 7)</li>
+          <li><i class="bi bi-clipboard-check"></i> Konsentrasi Quality Assurance</li>
+        </ul>
+      </section>
+
+      <!-- QA SKILLS -->
+      <section id="qa-skills" class="section wrap">
+        <h2 class="section-title">Skill</h2>
+        <div class="cards cards-3">
+          <article class="card">
+            <i class="bi bi-list-check card-icon"></i>
+            <h3>Manual Testing</h3>
+            <p>Functional Testing dan Black Box Testing, lengkap dengan penyusunan test case dan pencatatan hasil uji.</p>
+          </article>
+          <article class="card">
+            <i class="bi bi-robot card-icon"></i>
+            <h3>Automation Testing</h3>
+            <p>Selenium WebDriver dan Python (tingkat dasar), sedang diperdalam lewat penelitian tugas akhir.</p>
+          </article>
+          <article class="card">
+            <i class="bi bi-code-slash card-icon"></i>
+            <h3>Web Development</h3>
+            <p>Aktif dalam pengembangan website menggunakan teknologi modern seperti HTML, CSS, Tailwind CSS, JavaScript, PHP, dan Laravel.</p>
+
+        </div>
+
+        <h3 class="sub-title">Teknologi &amp; Tools</h3>
+        <div class="tech-grid" id="tech-grid">
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="Logo HTML5" loading="lazy" width="56" height="56" />
+            <h4>HTML</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="Logo CSS3" loading="lazy" width="56" height="56" />
+            <h4>CSS</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Logo Tailwind CSS" loading="lazy" width="56" height="56" />
+            <h4>Tailwind CSS</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Logo JavaScript" loading="lazy" width="56" height="56" />
+            <h4>JavaScript</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="Logo PHP" loading="lazy" width="56" height="56" />
+            <h4>PHP</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Logo Laravel" loading="lazy" width="56" height="56" />
+            <h4>Laravel</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="Logo MySQL" loading="lazy" width="56" height="56" />
+            <h4>MySQL</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Logo Python" loading="lazy" width="56" height="56" />
+            <h4>Python</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="Logo Selenium" loading="lazy" width="56" height="56" />
+            <h4>Selenium</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Logo Jira" loading="lazy" width="56" height="56" />
+            <h4>Jira</h4>
+          </article>
+          <article class="tech-card">
+            <!-- Logo Google Apps Script: empat batang warna (merah, kuning, hijau, biru) -->
+            <svg class="tech-svg" viewBox="0 0 80 64" width="56" height="56" role="img" aria-label="Logo Google Apps Script" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(52 54) rotate(180)">
+                <rect x="0" y="-6.5" width="40" height="13" rx="6.5" fill="#ea4335" />
+                <circle cx="33" cy="0" r="3.2" fill="#fff" />
+              </g>
+              <g transform="translate(52 54) rotate(222)">
+                <rect x="0" y="-6.5" width="40" height="13" rx="6.5" fill="#fbbc04" />
+                <circle cx="33" cy="0" r="3.2" fill="#fff" />
+              </g>
+              <g transform="translate(52 54) rotate(255)">
+                <rect x="0" y="-6.5" width="40" height="13" rx="6.5" fill="#34a853" />
+                <circle cx="33" cy="0" r="3.2" fill="#fff" />
+              </g>
+              <g transform="translate(52 54) rotate(288)">
+                <rect x="0" y="-6.5" width="40" height="13" rx="6.5" fill="#4285f4" />
+                <circle cx="33" cy="0" r="3.2" fill="#fff" />
+                <circle cx="7" cy="0" r="3.2" fill="#fff" />
+              </g>
+            </svg>
+            <h4>Google Apps Script</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="Logo Google Sheets" loading="lazy" width="56" height="56" />
+            <h4>Google Sheets</h4>
+          </article>
+          <article class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Logo Figma" loading="lazy" width="56" height="56" />
+            <h4>Figma</h4>
+          </article>
+        </div>
+      </section>
+
+      <!-- OTHER PROJECTS -->
+      <section id="projects" class="section wrap">
+        <h2 class="section-title">Proyek Web &amp; Testing</h2>
+        <div class="cards cards-proj">
+          <article class="card project">
+            <img src="asset/style/image/219.png" alt="Logo dan website Es Kelapa 219" loading="lazy" />
+            <h3>Logo &amp; Website Es Kelapa 219</h3>
+            <a href="https://nusiqowiyu.github.io/es-kelapa-219-web/" target="_blank" rel="noopener">Buka website <i class="bi bi-box-arrow-up-right"></i></a>
+          </article>
+          <article class="card project">
+            <img src="asset/style/image/ikraf.png" alt="Logo Ikraf" loading="lazy" />
+            <h3>Web Industri Kreatif Kab. Tangerang (IKRAF)</h3>
+            <p>Frontend developer, proyek kolaborasi bersama dosen.</p>
+          </article>
+          <article class="card project">
+            <img src="asset/style/image/inventory.png" alt="Development website inventory" loading="lazy" />
+            <h3>Development Website Inventory</h3>
+            <p>Proyek pengembangan website inventory berbasis web menggunakan Google Apps Script.</p>
+          </article>
+        </div>
+      </section>
+
+            <!-- CONTACT -->
+      <section id="contact" class="section wrap">
+        <h2 class="section-title">Kontak</h2>
+        <div class="cards cards-4 contact">
+          <a class="card contact-card" href="https://mail.google.com/mail/?view=cm&fs=1&to=nusiqowiyu219@gmail.com&su=Halo%20Nusi%2C%20saya%20tertarik%20dengan%20portfolio%20Anda" target="_blank" rel="noopener" title="nusiqowiyu219@gmail.com"><i class="bi bi-envelope"></i><span>Email</span></a>
+          <a class="card contact-card" href="https://wa.me/6287830168304" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span>WhatsApp</span></a>
+          <a class="card contact-card" href="https://www.instagram.com/adriqowiyu" target="_blank" rel="noopener"><i class="bi bi-instagram"></i><span>Instagram</span></a>
+          <a class="card contact-card" href="https://www.tiktok.com/@adrinusi28" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i><span>TikTok</span></a>
+        </div>
+        <p class="note center" style="margin-top: 18px">
+          Email: <a href="mailto:nusiqowiyu219@gmail.com">nusiqowiyu219@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Muhamad Adri Nusi Qowiyu</p>
+    </footer>
+
+    <script>
+      /* Pastikan halaman terbuka di paling atas (bagian foto) */
+      window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+      });
+
+      /* Menu mobile */
+      var toggle = document.querySelector(".nav-toggle");
+      var menu = document.getElementById("menu");
+      toggle.addEventListener("click", function () {
+        var open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      menu.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") {
+          menu.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      /* Efek mengetik pada baris peran di hero */
+      (function () {
+        var el = document.getElementById("typed");
+        if (!el) return;
+        var roles = ["Junior QA Engineer", "Manual & Automation Testing", "Web Developer"];
+        var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce) {
+          el.textContent = roles[0];
+          return;
+        }
+        var r = 0;
+        var c = 0;
+        var deleting = false;
+
+        function tick() {
+          var word = roles[r];
+          if (!deleting) {
+            c++;
+            el.textContent = word.slice(0, c);
+            if (c === word.length) {
+              deleting = true;
+              setTimeout(tick, 1600); /* jeda setelah selesai mengetik */
+              return;
+            }
+            setTimeout(tick, 70);
+          } else {
+            c--;
+            el.textContent = word.slice(0, c);
+            if (c === 0) {
+              deleting = false;
+              r = (r + 1) % roles.length;
+              setTimeout(tick, 350);
+              return;
+            }
+            setTimeout(tick, 35);
+          }
+        }
+        setTimeout(tick, 1100); /* mulai setelah animasi masuk hero */
+      })();
+
+      /* Reveal card teknologi satu per satu saat di-scroll */
+      (function () {
+        var grid = document.getElementById("tech-grid");
+        if (!grid) return;
+        var cards = Array.prototype.slice.call(grid.querySelectorAll(".tech-card"));
+        var STEP = 90; /* jeda antar card (ms) */
+        var DURATION = 800; /* sama dengan durasi transisi di CSS (ms) */
+
+        function showAll(instant) {
+          cards.forEach(function (card, i) {
+            if (instant) {
+              card.classList.add("show", "done");
+              return;
+            }
+            card.style.transitionDelay = i * STEP + "ms";
+            card.classList.add("show");
+            /* setelah animasi selesai, hapus delay supaya efek hover tetap cepat */
+            setTimeout(function () {
+              card.style.transitionDelay = "";
+              card.classList.add("done");
+            }, i * STEP + DURATION + 50);
+          });
+        }
+
+        var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || !("IntersectionObserver" in window)) {
+          showAll(true);
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                showAll(false);
+                observer.disconnect();
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        observer.observe(grid);
+      })();
+    </script>
+  </body>
+</html>
